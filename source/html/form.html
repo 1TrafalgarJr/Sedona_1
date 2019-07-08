@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<title>Sedona</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+</head>
+<body class="container">
+	<header class="page-header">
+		<nav class="page-header__nav">
+			<div class="page-header__logo">
+				<a href="#" class="page-header__logo--image">
+					<picture>
+						<source media="" srcset="">
+						<source media="" srcset="">
+						<img class="" src="" width="" height="" alt="">
+					</picture>
+				</a>
+			</div>
+			<ul class="page-header__menu">
+				<li class="page-header__menu--index">
+					<a href="index.html">
+						Главная
+					</a>
+				</li>
+				<li class="page-header__menu--index">
+					<a href="photo.html">
+						Фото и видео
+					</a>
+				</li>
+				<li class="page-header__menu--index">
+					<a href="form.html">
+						Форма отзыва
+					</a>
+				</li>
+				<li class="page-header__menu--index">
+					<a href="#">
+						HTML Academy
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="page-header__back">
+			<div class="page-header__back--desktop">
+				<picture>
+					<source media="" srcset="">
+					<source media="" srcset="">
+					<img class="" src="" width="" height="" alt="">
+				</picture>
+			</div>
+			<div class="page-header__back--text">
+				<picture>
+					<source media="" srcset="">
+					<source media="" srcset="">
+					<img class="" src="" width="" height="" alt="">
+				</picture>
+			</div>
+		</div>
+	</header>
+	<main class="page-main">
+		<div class="page-main__item">
+			<h2 class="page-main__item--h2">
+				Оставьте свой отзыв
+			</h2>
+			<h3 class="page-main__item--h3">
+				Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+			</h3>
+		</div>
+		<div class="page-main__form form">
+			<form class="form__main" method="post" action="https://echo.htmlacademy.ru">
+				<div class="form__impression">
+					<fieldset class="form__impression--radio">
+						<legend class="form__legend">
+							<span class="form__legend--text">
+								Ваше общее впечатление:
+							</span>
+						</legend>
+						<div class="form__impression--item">
+							<ul class="form__impression--list">
+								<li class="form__impression--style">
+									<input class="form__impression--radio" id="rather-positive" type="radio" name="rather-positive" value="Cкорее положительное">
+									<label for="rather-positive" class="form__radio">
+										Cкорее положительное
+									</label>
+								</li>
+								<li class="form__impression--style">
+									<input class="form__impression--radio" id="rather-negative" type="radio" name="rather-negative" value="Cкорее отрицательное">
+									<label for="rather-negative" class="form__radio">
+										Cкорее отрицательное
+									</label>
+								</li>
+								<li class="form__impression--style">
+									<input class="form__impression--radio" id="no-answer" type="radio" name="no-answer" value="Затрудняюсь ответить">
+									<label for="no-answer" class="form__radio">
+										Затрудняюсь ответить
+									</label>
+								</li>
+							</ul>
+						</div>
+					</fieldset>
+				</div>
+				<div class="form__data">
+					<fieldset class="form__data--full">
+						<legend class="form__legend">
+							ФИО
+						</legend>
+						<div class="form__data--item">
+							<ul class="form__data--list">
+								<li class="form__data--text">
+									<input class="form__data--border" id="data-name" type="text" name="data-name" placeholder="Введите ваше имя">
+									<label for="data-name" class="form__text">
+										Введите ваше имя
+									</label>
+								</li>
+								<li class="form__data--text">
+									<input class="form__data--border" id="data-surname" type="text" name="data-surname" placeholder="Введите вашу фамилию>
+									<label for="data-surname" class="form__text">
+										Введите вашу фамилию
+									</label>
+								</li>
+								<li class="form__data--text">
+									<input class="form__data--border" id="data-patronymic" type="text" name="data-patronymic" placeholder="Введите ваше отчество">
+									<label for="data-patronymic" class="form__text">
+										Введите ваше отчество
+									</label>
+								</li>
+							</ul>
+						</div>
+					</fieldset>
+				</div>
+				<div class="form__communication">
+					<fieldset class="form__communication--center">
+						<legend class="form__legend">
+							Контактная информация:
+						</legend>
+						<div class="form__content">
+							<input class="form__phone" id="phone" type="tel" name="phone" pattern="+7[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+							<label for="phone" class="form__phone--text">
+								<span class="form__phone--span">
+									Телефон*:
+								</span>
+							</label>
+							<input class="form__email" id="email" type="email" name="email"  placeholder="Введите e-mail">
+							<label for="email" class="form__email--text">
+								<span class="form__email--span">
+									Электронная почта*:
+								</span>
+							</label>
+						</div>
+					</fieldset>
+				</div>
+				<div class="form__attractions">
+					<fieldset class="form__visits">
+						<legend class="form__legend">
+							Посещенные достопримечательности:
+						</legend>
+						<div class="form__attractions--list">
+							<p class="form__attractions--text">
+								<input class="form__attractions--checkbox" id="devil's-bridge" type="checkbox" name="devil's-bridge" value="Мост дьявола" checked="">
+								<label for="devil's-bridge" class="form__checkbox">
+									Мост дьявола
+								</label>
+							</p>
+							<p class="form__attractions--text">
+								<input class="form__attractions--checkbox" id="mount-bell" type="checkbox" name="mount-bell" value="Гора Колокол" checked="">
+								<label for="mount-bell" class="form__checkbox">
+									Гора Колокол
+								</label>
+							</p>
+							<p class="form__attractions--text">
+								<input class="form__attractions--checkbox" id="slide-park" type="checkbox" name="slide-park" value="Слайд-парк" checked="">
+								<label for="slide-park" class="form__checkbox">
+									Слайд-парк
+								</label>
+							</p>
+							<p class="form__attractions--text">
+								<input class="form__attractions--checkbox" id="red-rocks" type="checkbox" name="red-rocks" value="Красные скалы" checked="">
+								<label for="red-rocks" class="form__checkbox">
+									Красные скалы
+								</label>
+							</p>
+						</div>
+					</fieldset>
+				</div>
+				<div class="form__extra">
+					<fieldset class="form__review">
+						<legend class="form__legend">
+							Опишите свои эмоции:
+						</legend>
+						<div class="form__control">
+							<label class="form__label" for="info"></label>
+							<textarea class="form__extra--control" id="info" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
+						</div>
+					</fieldset>
+				</div>
+				<div class="form__button">
+					<p class="form__notes">
+						*-Обязательные поля
+					</p>
+					<button class="btn btn__form">
+						Отправить отзыв
+					</button>
+				</div>
+			</form>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__center">
+			<h3 class="page-footer__center--h3">
+				#visitsedona
+			</h3>
+			<ul class="page-footer__social">
+				<li class="page-footer__social--item"></li>
+				<li class="page-footer__social--item"></li>
+				<li class="page-footer__social--item"></li>
+			</ul>
+			<p class="page-footer__developed">
+				Разработано
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
